@@ -1,0 +1,262 @@
+.mainTitle {
+  font-size: 58px;
+  /* color: #fcce89; */
+  color: rgba(47, 47, 47, 0.95);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.mainWrapper {
+  padding-top: 170px;
+}
+
+.banner img {
+  padding: 25px 60px 10px 60px;
+  width: calc(100% - 0%);
+}
+
+.menu {
+  padding: 100px var(--px) var(--py);
+  color: var(--space-cadet);
+  text-align: center;
+}
+
+.menuGrid {
+  display: flex;
+  align-items: flex-start;
+}
+
+.menuGrid .leftSideContainer {
+  position: sticky;
+  width: 220px;
+  top: 140px;
+
+  text-align: left;
+  margin-left: 28px;
+}
+
+.menuGrid .leftSideContainer .textCategory {
+  padding-bottom: 25px;
+}
+
+.menuGrid .leftSide {
+  /* height: calc(100vh - 250px); */
+  overflow-y: scroll;
+}
+
+.menuGrid .leftSide .sort {
+  padding-top: 30px;
+}
+
+.menuGrid .leftSide .sort h3 {
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/* Right side */
+
+.menuGrid .rightSide {
+  width: calc(100% - 235px);
+}
+
+.choosedCategory {
+  padding: 0 35px;
+}
+
+.categoriesSort {
+  display: none;
+
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.choosedCategory .categoriesSort small {
+  font-size: 16px;
+  color: var(--saffron);
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.7);
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.choosedCategory .searchBlockContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.categoriesPopupContainer {
+  position: relative;
+}
+
+.categoriesPopup {
+  display: none;
+}
+
+.categoriesPopup.active {
+  display: block;
+  position: absolute;
+  top: 39px;
+  width: 150px;
+  z-index: 1;
+}
+
+.sortPopupContainer {
+  position: relative;
+}
+
+.sortPopupContainer .sortPopup {
+  display: none;
+}
+
+.sortPopupContainer .sortPopup.active {
+  display: block;
+  position: absolute;
+  top: 39px;
+  right: 0px;
+
+  background: var(--cultured);
+  width: 200px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.sortPopup ul li.active {
+  color: white;
+  padding: 4px;
+  background: var(--saffron);
+}
+
+.sortPopup ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sortPopup ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.searchBlock {
+  position: relative;
+}
+
+.choosedCategory input {
+  width: 250px;
+  outline: none;
+  font-size: 17px;
+  border: 1.5px solid var(--space-cadet);
+  padding: 4px 35px;
+}
+
+.choosedCategory .search {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+
+  width: 21px;
+}
+
+.choosedCategory .searchClear {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+
+  width: 15px;
+  cursor: pointer;
+}
+
+.menuProductsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 35px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .menuProductsGrid {
+    padding: 20px 10px !important;
+  }
+
+  .searchBlock input {
+    width: 130px !important;
+  }
+
+  .choosedCategory .categoriesSort {
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 570px) {
+  .categoriesSort {
+    gap: 70px !important;
+  }
+}
+
+@media (max-width: 670px) {
+  .rightSide .menuProductsGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .categoriesSort {
+    gap: 165px;
+  }
+}
+
+@media (max-width: 890px) {
+  .mainWrapper {
+    padding-top: 120px !important;
+  }
+
+  .banner img {
+    padding-right: 60px !important;
+  }
+
+  .leftSideContainer {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100% !important;
+  }
+
+  .categoriesSort {
+    display: flex;
+  }
+}
+
+@media (max-width: 1140px) {
+  .mainWrapper {
+    padding-top: 130px;
+  }
+
+  .banner img {
+    padding-right: 90px;
+  }
+
+  .menu {
+    padding-top: 30px;
+  }
+
+  .menuProductsGrid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .menuGrid .leftSideContainer {
+    width: 170px;
+    top: 110px;
+    /* height: calc(100vh - 250px) !important; */
+  }
+
+  .choosedCategory input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .menuProductsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

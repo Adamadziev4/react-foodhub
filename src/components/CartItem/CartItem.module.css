@@ -1,0 +1,108 @@
+.cartItem {
+  background: var(--cultured);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.imgAndName {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.imgBox {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--default-transition);
+}
+
+.cartItem:hover .productImg {
+  transform: scale(1.05);
+}
+
+.productName {
+  color: var(--space-cadet);
+  font-size: var(--fs-5);
+  font-weight: 500;
+  width: calc(100% - 80px);
+}
+
+.productPrice {
+  position: relative;
+  background: var(--saffron);
+  color: var(--space-cadet);
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productPrice button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  padding: 1px 6px;
+  font-size: 17px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: var(--saffron);
+}
+
+.productPrice button:hover {
+  padding: 1.5px 7px;
+}
+
+.productPrice .small {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.countAndPrice {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.productCount {
+  font-size: 15px;
+  padding: 0 13px 0 15px;
+
+  width: 60px;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.productCount button {
+  background-color: var(--saffron);
+  color: white;
+  padding: 0.5px 5px;
+  border-radius: 50%;
+  border: 1px solid var(--saffron);
+}
+
+.productCount button:hover {
+  background-color: white;
+  color: var(--saffron);
+}
+
+.productCount button.incBtn {
+  color: var(--saffron);
+  background-color: white;
+}

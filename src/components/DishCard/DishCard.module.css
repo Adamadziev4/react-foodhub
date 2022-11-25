@@ -1,0 +1,120 @@
+.productCard {
+  cursor: auto;
+}
+
+.productCard.inMenu .imgBox {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.productImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--default-transition);
+}
+
+.productCard:hover .productImg {
+  transform: scale(1.05);
+}
+
+.cardBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  font-size: 14px;
+}
+
+.cardBadge ion-icon {
+  font-size: 13px;
+}
+
+.cardBadge.green {
+  background: var(--pistachio);
+  color: var(--space-cadet);
+}
+
+.cardBadge.red {
+  background: var(--red-orange-crayola);
+  color: var(--space-cadet);
+}
+
+.productCard .addToCart {
+  position: absolute;
+  background: var(--cultured);
+  border-radius: 35px;
+  padding: 6.5px 8px;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.productCard .addToCart:hover {
+  background: rgb(236, 236, 236);
+}
+
+.productCard .addToCart .count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: var(--space-cadet);
+}
+
+.productCard .addToCart:active .count {
+  transform: translate(0px, -1px);
+}
+
+.productCard .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: var(--cultured);
+  margin-bottom: 15px;
+}
+
+.productCard.inMenu .productName {
+  color: var(--space-cadet);
+  width: calc(100% - 60px);
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.productCard .menuProductPrice {
+  background: var(--saffron);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--space-cadet);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.productCard .small {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.productCard .productText {
+  font-size: 13px;
+  color: var(--rhythm);
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  margin-bottom: 15px;
+}
+
+.product .btnPrimary {
+  margin-inline: auto;
+}
