@@ -6,8 +6,7 @@
 
 ## Использованные технологии
 
-Проект написан на React и JavaScript.  
-С использованием следующих технологий:  
+Проект написан на React и JavaScript с использованием следующих технологий:  
 * Style modules
 * React router v6
 * Pagination on scroll
