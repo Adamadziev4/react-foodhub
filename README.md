@@ -27,7 +27,7 @@
 Выполнить следующие команды в терминале: Сначала `npm i`. Затем `npm run start`
 
 ## Скриншоты
-
+  
 (Скриншот 1)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-1.png)
   
