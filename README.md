@@ -30,21 +30,22 @@
   
 (Скриншот 1)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-1.png)
-  ---
+  ***
 (Скриншот 2)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-2.png)
-  ---
+  ***
 (Скриншот 3)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-3.png)
-  ---
+  ***
 (Скриншот 4)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-4.png)
-  ---
+  ***
 (Скриншот 5)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-5.png)
-  ---
+  ***
 (Скриншот 6)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-6.png)
-  ---
+  ***
 (Скриншот 7)
 ![Screenshot](https://github.com/Adamadziev4/react-foodhub/blob/main/public/images/Foodhub-7.png)
+  ***
